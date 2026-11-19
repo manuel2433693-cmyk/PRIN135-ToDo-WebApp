@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Todo List</h1>
+
+        <form id="taskForm">
+            <input type="text" id="taskInput"
+                placeholder="What needs to be done?" required>
+            <input type="number" id="hoursInput"
+                min="0" step="any" value="0">
+            <button type="submit" class="add-btn">Add</button>
+        </form>
+
+    <div class="filters">
+        <div class="filter-buttons">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="active">Active</button>
+            <button class="filter" data-filter="completed">Completed</button>
+        </div>
+
+        
+    
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
